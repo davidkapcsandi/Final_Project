@@ -68,11 +68,11 @@ void testReadOne() {
 	Long id = 1L;
 	
 	Optional<Vehicle> optAnim = Optional.of(returned);
-	// WHEN a certain method is called, return ....
+
 	Mockito.when(this.rep.findById(id)).thenReturn(optAnim);
-	// THEN check what was returned is equal to what was expected
+	
 	assertThat(this.serv.readOne(id)).isEqualTo(returned);
-	// VERIFY
+
 	Mockito.verify(this.rep, Mockito.times(1)).findById(id);
 }
 @Test
