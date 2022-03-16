@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.example.vehicle.domain.Vehicle;
 
 @Repository
-public interface VehiclesRepo extends JpaRepository<Vehicle, Long>{
+public interface VehicleRepo extends JpaRepository<Vehicle, Long>{
 	
 
 

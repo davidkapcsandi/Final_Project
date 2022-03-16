@@ -6,15 +6,15 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.example.vehicle.domain.Vehicle;
-import com.example.vehicle.repo.VehiclesRepo;
+import com.example.vehicle.repo.VehicleRepo;
 
 
 @Service
 public class VehicleServiceDB implements VehicleInterface<Long> {
 	
-	private VehiclesRepo repo;
+	private VehicleRepo repo;
 	
-	public VehicleServiceDB(VehiclesRepo repo) {
+	public VehicleServiceDB(VehicleRepo repo) {
 		super();
 		this.repo = repo;
 	}
@@ -43,7 +43,7 @@ public class VehicleServiceDB implements VehicleInterface<Long> {
 		Vehicle found = optAni.get();
 		found.setType(b.getType());
 		found.setNumberOfWheels(b.getNumberOfWheels());
-		found.setColor(b.isColor());
+		found.setColor(b.getColor());
 		return this.repo.save(found);
 	}
 
