@@ -26,6 +26,7 @@ public class VehicleServiceList implements VehicleInterface<Integer> {
 	@Override
 	public Vehicle update(Integer id, Vehicle b) {
 		// TODO Auto-generated method stub
+		this.vehicle.set(id, b);
 		return this.vehicle.get(id);
 	}
 
