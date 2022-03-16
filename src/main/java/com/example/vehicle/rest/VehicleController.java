@@ -4,9 +4,14 @@ import java.util.List;
 
 import javax.websocket.server.PathParam;
 
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,12 +21,16 @@ import com.example.vehicle.service.VehicleServiceDB;
 
 @RestController
 public class VehicleController {
-	
+
 	private VehicleServiceDB service;
 	
 	public VehicleController(VehicleServiceDB service) {
 		super();
 		this.service = service;
+	}
+		@PostMapping("/create")
+		public ResponseEntity<Vehicle> createVehicle(@RequestBody Vehicle x) {
+			return new ResponseEntity<Vehicle>(this.service.create(x), HttpStatus.CREATED);
 	}
 	
 		@GetMapping("readAll")
@@ -39,13 +48,12 @@ public class VehicleController {
 			return this.service.update(id, updated);
 		}
 
-		// DELETE
 		@DeleteMapping("/delete")
 		public Vehicle delete(@PathParam("id") Long id) {
 			return this.service.delete(id);
 		}
 		
-		@DeleteMapping("/remove")
+		@DeleteMapping("/remove/{id}")
 		public boolean remove(@PathParam("id") Long id) {
 			return this.service.remove(id);
 		}
