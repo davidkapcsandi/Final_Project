@@ -19,6 +19,7 @@ import com.example.vehicle.domain.Vehicle;
 import com.example.vehicle.repo.VehicleRepo;
 
 
+
 @SpringBootTest
 @ActiveProfiles("test")
 public class VehicleServiceDBTest {
@@ -62,4 +63,65 @@ void testRead() {
 	// VERIFY
 	Mockito.verify(this.rep, Mockito.times(1)).findAll();
 }
+@Test
+void testReadOne() {
+	Long id = 1L;
+	
+	Optional<Vehicle> optAnim = Optional.of(returned);
+	// WHEN a certain method is called, return ....
+	Mockito.when(this.rep.findById(id)).thenReturn(optAnim);
+	// THEN check what was returned is equal to what was expected
+	assertThat(this.serv.readOne(id)).isEqualTo(returned);
+	// VERIFY
+	Mockito.verify(this.rep, Mockito.times(1)).findById(id);
+}
+@Test
+void testUpdate() {
+
+	long id = 1L;
+	
+	Vehicle toUpdate = new Vehicle(id, "Yacht", 0, "White");
+	Vehicle tryUpdateVehicle = new Vehicle(id, "Car", 4 ,"Blue");
+
+
+	Vehicle updated = new Vehicle(id, toUpdate.getType(), toUpdate.getNumberOfWheels(), toUpdate.getColor());
+
+	Mockito.when(this.rep.findById(id)).thenReturn(Optional.of(tryUpdateVehicle));
+	Mockito.when(this.rep.save(updated)).thenReturn(updated);
+
+	assertThat(this.serv.update(id, toUpdate)).isEqualTo(updated);
+
+	Mockito.verify(this.rep, Mockito.times(1)).findById(id);
+	Mockito.verify(this.rep, Mockito.times(1)).save(new Vehicle(id, "Yacht", 0, "White"));
+}
+@Test
+void testDelete() {
+	// GIVEN
+	Long id = 1L;
+
+	Optional<Vehicle> optChoco = Optional.of(returned);
+
+	Mockito.when(this.rep.findById(id)).thenReturn(optChoco);
+
+	assertThat(this.serv.delete(id)).isEqualTo(returned);
+
+	Mockito.verify(this.rep, Mockito.times(1)).deleteById(id);
+	Mockito.verify(this.rep, Mockito.times(1)).findById(id);
+}
+@Test
+void testRemove() {
+
+	Long id = 1L;
+
+	Mockito.when(this.rep.existsById(id)).thenReturn(false);
+
+	assertThat(this.serv.remove(id)).isTrue();
+
+	Mockito.verify(this.rep, Mockito.times(1)).deleteById(id);
+	Mockito.verify(this.rep, Mockito.times(1)).existsById(id);
+}
+@AfterEach
+void clear() {
+
+	}
 }

@@ -53,8 +53,6 @@ public class VehicleController {
 			return this.service.delete(id);
 		}
 		
-		@DeleteMapping("/remove/{id}")
-		public boolean remove(@PathParam("id") Long id) {
-			return this.service.remove(id);
-		}
+
+	
 }
