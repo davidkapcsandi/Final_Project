@@ -53,14 +53,14 @@ void testCreate() {
 @Test
 void testRead() {
 	System.out.println("test 2");
-	// GIVEN
+
 	List<Vehicle> readList = new ArrayList<>();
 	readList.add(input);
-	// WHEN
+
 	Mockito.when(this.rep.findAll()).thenReturn(readList);
-	// THEN
+
 	assertThat(this.serv.read()).isEqualTo(readList);
-	// VERIFY
+
 	Mockito.verify(this.rep, Mockito.times(1)).findAll();
 }
 @Test
