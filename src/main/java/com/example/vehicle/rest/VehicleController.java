@@ -33,8 +33,8 @@ public class VehicleController {
 			return new ResponseEntity<Vehicle>(this.service.create(x), HttpStatus.CREATED);
 	}
 	
-		@GetMapping("readAll")
-		public List<Vehicle> readAnimal() {
+		@GetMapping("/readAll")
+		public List<Vehicle> readVehicle() {
 			return this.service.read();
 		}
 
