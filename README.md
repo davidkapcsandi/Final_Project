@@ -8,12 +8,13 @@ I am going to attach Screenshots of every CRUD function plus one.
 
 Please see the following links as a proof of API + mySQL functions:
 
-C - https://i.imgur.com/sS9uEHf.png , https://i.imgur.com/hhB3jQZ.png , https://i.imgur.com/yfCHPdD.png
+Create function - Number 1 : ![alt text](https://i.imgur.com/sS9uEHf.png) 
+Number 2 : ![alt text](https://i.imgur.com/hhB3jQZ.png) Number 3 : ![alt text](https://i.imgur.com/yfCHPdD.png)
 
-R - https://i.imgur.com/XLWd1uW.png, Readbyid : https://i.imgur.com/P4eSkgZ.png
+Read Function : ![alt text](https://i.imgur.com/XLWd1uW.png), Readbyid function : ![alt text](https://i.imgur.com/P4eSkgZ.png)
 
-U - ![alt text](https://i.imgur.com/Ohrzvx6.png)
+Update Function : ![alt text](https://i.imgur.com/Ohrzvx6.png)
 
-D - https://i.imgur.com/fOMINXo.png
+Delete function: ![alt text](https://i.imgur.com/fOMINXo.png)
 
-Test Coverage: https://i.imgur.com/KcFvRc0.jpg
+Test Coverage : ![alt text](https://i.imgur.com/KcFvRc0.jpg)
