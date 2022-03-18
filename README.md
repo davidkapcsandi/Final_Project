@@ -10,9 +10,9 @@ Sometimes I had to look up even basics, but I am sure with more practice I will 
 ## Please see the following links as a proof of API + mySQL functions:
 
 ###### Create function - Number 1 : ![alt text](https://i.imgur.com/sS9uEHf.png) 
-###### Number 2 : ![alt text](https://i.imgur.com/hhB3jQZ.png) ###### Number 3 : ![alt text](https://i.imgur.com/yfCHPdD.png)
+###### Number 2 : ![alt text](https://i.imgur.com/hhB3jQZ.png), Number 3 : ![alt text](https://i.imgur.com/yfCHPdD.png)
 
-###### Read Function : ![alt text](https://i.imgur.com/XLWd1uW.png), ###### Readbyid function : ![alt text](https://i.imgur.com/P4eSkgZ.png)
+###### Read Function : ![alt text](https://i.imgur.com/XLWd1uW.png), Readbyid function : ![alt text](https://i.imgur.com/P4eSkgZ.png)
 
 ###### Update Function : ![alt text](https://i.imgur.com/Ohrzvx6.png)
 
