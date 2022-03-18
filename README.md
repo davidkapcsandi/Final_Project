@@ -20,4 +20,5 @@ Sometimes I had to look up even basics, but I am sure with more practice I will 
 
 ###### Please see the following picture of coverage:
 
-###### Test Coverage : ![alt text](https://i.imgur.com/KcFvRc0.jpg)
+###### Test Coverage : 
+![alt text](https://i.imgur.com/KcFvRc0.jpg)
