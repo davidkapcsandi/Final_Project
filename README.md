@@ -5,6 +5,8 @@ I felt like writing the code itself went quickly and well, I came across new iss
 Jira and Git were the hardest even though it shouldn't be so I definitely have to go over those recordings again.
 Sometimes I had to look up even basics, but I am sure with more practice I will be able to do these kind of tasks easier and quicker. After the course I will keep up with coding because this is my new passion.
 
+Jira board link : https://davidkapcsandi96.atlassian.net/jira/software/projects/FP/boards/2/roadmap?shared=&atlOrigin=eyJpIjoiZjI4MTU1ODQxMzBiNGM0N2FmODU2NmU5MmMwMWQ3YTQiLCJwIjoiaiJ9
+
 ## I am going to attach Screenshots of every CRUD function plus one.
 
 ## Please see the following links as a proof of API + mySQL functions:
