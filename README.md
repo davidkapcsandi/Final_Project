@@ -8,7 +8,7 @@ I am going to attach Screenshots of every CRUD function plus one.
 
 Please see the following links as a proof of API + mySQL functions:
 
-C - ![alt text]https://i.imgur.com/sS9uEHf.png , https://i.imgur.com/hhB3jQZ.png , https://i.imgur.com/yfCHPdD.png
+C - https://i.imgur.com/sS9uEHf.png , https://i.imgur.com/hhB3jQZ.png , https://i.imgur.com/yfCHPdD.png
 
 R - https://i.imgur.com/XLWd1uW.png, Readbyid : https://i.imgur.com/P4eSkgZ.png
 
