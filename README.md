@@ -22,3 +22,6 @@ Sometimes I had to look up even basics, but I am sure with more practice I will 
 
 ###### Test Coverage : 
 ![alt text](https://i.imgur.com/KcFvRc0.jpg)
+
+###### Please see the following picture of risk assessment:
+!
